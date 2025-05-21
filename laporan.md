@@ -143,25 +143,7 @@ Kelebihan dan kekurangan dari pendekatan yang dipilih:
 
 Untuk mengevaluasi efektivitas sistem rekomendasi yang dikembangkan, beberapa metrik evaluasi digunakan:
 
-### 1. Precision@k
-
-Precision@k mengukur proporsi item yang relevan dari k item yang direkomendasikan. Dalam konteks sistem rekomendasi mobil bekas, precision@k dapat diinterpretasikan sebagai proporsi mobil yang benar-benar sesuai dengan preferensi pengguna dari k mobil yang direkomendasikan.
-
-Formula:
-```
-Precision@k = (Jumlah item relevan dalam k rekomendasi) / k
-```
-
-### 2. Recall@k
-
-Recall@k mengukur proporsi item relevan yang berhasil direkomendasikan dari total item relevan yang tersedia. Dalam konteks sistem rekomendasi mobil bekas, recall@k dapat diinterpretasikan sebagai proporsi mobil yang sesuai dengan preferensi pengguna yang berhasil direkomendasikan dari total mobil yang sesuai dengan preferensi pengguna.
-
-Formula:
-```
-Recall@k = (Jumlah item relevan dalam k rekomendasi) / (Total jumlah item relevan)
-```
-
-### 3. Cosine Similarity Score
+### Cosine Similarity Score
 
 Untuk content-based filtering, cosine similarity score digunakan untuk mengukur kesamaan antara mobil yang dipilih dan mobil yang direkomendasikan. Skor yang lebih tinggi menunjukkan kesamaan yang lebih besar.
 
@@ -171,15 +153,6 @@ Cosine Similarity(A, B) = (A · B) / (||A|| * ||B||)
 ```
 dimana A dan B adalah vektor fitur dari dua mobil, A · B adalah dot product, dan ||A|| dan ||B|| adalah norma dari vektor A dan B.
 
-### 4. Euclidean Distance
-
-Untuk pendekatan KNN, Euclidean distance digunakan untuk mengukur jarak antara mobil yang dipilih dan mobil yang direkomendasikan. Jarak yang lebih kecil menunjukkan kesamaan yang lebih besar.
-
-Formula:
-```
-Euclidean Distance(A, B) = sqrt(sum((A_i - B_i)^2))
-```
-dimana A dan B adalah vektor fitur dari dua mobil, dan A_i dan B_i adalah nilai fitur ke-i.
 
 ### Hasil Evaluasi
 
